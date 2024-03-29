@@ -5,7 +5,7 @@ This package provides Dusk-like integration testing for your terminal commands. 
 > [!WARNING]
 > This package is currently in active development. The API is subject to change.
 
-> [!INFORMATION]
+> [!NOTE]
 > If you're testing Laravel commands this package currently supports only Symfony style commands, it has not been updated for Prompts yet.
 
 ## Example
