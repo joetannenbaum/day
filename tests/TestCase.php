@@ -2,9 +2,9 @@
 
 namespace Day\Day\Tests;
 
+use Day\Day\DayServiceProvider;
 use Illuminate\Database\Eloquent\Factories\Factory;
 use Orchestra\Testbench\TestCase as Orchestra;
-use Day\Day\DayServiceProvider;
 
 class TestCase extends Orchestra
 {
