@@ -39,7 +39,7 @@ class Day
 
     public function waitFor(string $text, int $timeout = 5)
     {
-        $this->script->push('set timeout ' . $timeout);
+        $this->script->push('set timeout '.$timeout);
 
         $text = addslashes($this->formatter->format($text));
 
@@ -105,7 +105,7 @@ class Day
                 eof { exit 1 }
             }
             BEFORE,
-            'spawn ' . $this->command,
+            'spawn '.$this->command,
         ])
             ->concat($this->script)
             ->push('expect eof');
@@ -122,7 +122,7 @@ class Day
 
         $proc = popen($path, 'r');
 
-        while (!feof($proc)) {
+        while (! feof($proc)) {
             $output = fread($proc, 4096);
             echo $output;
             @flush();
